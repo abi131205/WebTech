@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Number Type</title>
+</head>
+<body>
+    <h2>Check if a Number is Positive, Negative, or Neutral</h2>
+    <input type="number" id="num" placeholder="Enter a number">
+    <button onclick="checkNumber()">Check</button>
+    <p id="output"></p>
+
+    <script>
+        function checkNumber() {
+            let num = parseFloat(document.getElementById("num").value);
+            let result = num > 0 ? "Positive" : num < 0 ? "Negative" : "Neutral";
+            document.getElementById("output").innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
